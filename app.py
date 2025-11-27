@@ -16,6 +16,7 @@ except KeyError:
 
 st.set_page_config(page_title="Smart Summarizer", page_icon="💡")
 st.title("💡 Asisten Peringkas Dokumen Cerdas")
+st.write("Hi, nama saya Alfredo dan ini adalah program pertama saya yang terintegrasi dengan AI.")
 st.write("Tempelkan teks atau laporan di bawah ini, dan AI (GPT-3.5) akan meringkasnya untuk Anda.")
 
 # --- 2. Input Teks ---
@@ -48,4 +49,5 @@ if st.button("Ringkas Sekarang"):
         except Exception as e:
             st.error(f"Terjadi error saat menghubungi AI. Pastikan API Key Anda benar dan saldo akun OpenAI Anda mencukupi. Error: {e}")
     else:
+
         st.warning("Tolong masukkan teks yang ingin diringkas.")
