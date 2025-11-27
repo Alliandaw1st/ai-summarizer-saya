@@ -33,10 +33,11 @@ if st.button("Ringkas Sekarang"):
                 model="gpt-3.5-turbo", # Model yang dipakai (Stabil dan cepat)
                 messages=[
                     # Peran sistem: Kita kasih tahu AI dia harus jadi apa
-                    {"role": "system", "content": "Anda adalah asisten yang ahli meringkas teks panjang menjadi 5 poin utama yang jelas dalam Bahasa Indonesia."},
+                    {"role": "system", "content": "Anda adalah asisten yang ahli meringkas teks panjang menjadi 5 poin utama yang jelas dalam Bahasa Indonesia. **Hasil Anda harus selalu dalam format bullet point.**"}, 
                     # Permintaan pengguna
                     {"role": "user", "content": teks_input}
                 ]
+            )
             )
 
             # Ambil hasil ringkasan dari jawaban AI
@@ -51,3 +52,4 @@ if st.button("Ringkas Sekarang"):
     else:
 
         st.warning("Tolong masukkan teks yang ingin diringkas.")
+
