@@ -38,7 +38,6 @@ if st.button("Ringkas Sekarang"):
                     {"role": "user", "content": teks_input}
                 ]
             )
-            )
 
             # Ambil hasil ringkasan dari jawaban AI
             hasil_ringkasan = response.choices[0].message.content
@@ -52,4 +51,5 @@ if st.button("Ringkas Sekarang"):
     else:
 
         st.warning("Tolong masukkan teks yang ingin diringkas.")
+
 
